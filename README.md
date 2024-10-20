@@ -41,9 +41,9 @@ The objective of this project is the implementation of ROS2 concepts such as:
 - Use of already created interfaces such as those of `turtlesim`.
 - Configuration of parameters in the nodes.
 - Creation of a launch file to run all nodes.
+
 *Note: Parameters and launch files are not included in this repository but are recommended areas for further exploration.*
 
-Parameters allow customisation of node-internal variables during execution, including in the launch file, so as research from this repository, it is recommended to investigate these definitions.
 
 ## Nodes
 
