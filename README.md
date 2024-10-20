@@ -33,7 +33,7 @@ Parameters allow customisation of node-internal variables during execution, incl
 
 ## Nodes
 
-### SpawnerNode
+### Spawner Node
 
 **Purpose:** The SpawnerNode is responsible for spawning new turtles in the turtlesim simulator at random positions and orientations. It keeps track of all the alive turtles and publishes this information so other nodes can access it. Additionally, it provides a service to remove (kill) turtles from the simulator when they have been "captured" by the controller node.
 
@@ -70,7 +70,7 @@ Parameters allow customisation of node-internal variables during execution, incl
   - TurtleArray.msg: An array of Turtle messages representing all alive turtles.
   - TurtleTaken.srv: Service definition for removing a turtle by name.
 
-### ControllerNode
+### Controller Node
 
 **Purpose:** The ControllerNode controls the main turtle (turtle1) in the turtlesim simulator to chase and capture the turtles spawned by the SpawnerNode. It calculates the necessary movement commands to navigate towards the target turtle and requests the removal of the turtle once it is "captured".
 
