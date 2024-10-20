@@ -31,11 +31,3 @@ And other tools not included in this repository such as:
 
 Parameters allow customisation of node-internal variables during execution, including in the launch file, so as research from this repository, it is recommended to investigate these definitions.
 
-## Installation
-
-1. Clone this repository into your ROS2 workspace:
-
-   ```bash
-   cd ~/ros2_ws/src
-   git clone https://github.com/your_username/turtle_chaser.git
-
