@@ -16,7 +16,7 @@ This repository includes **two ROS2 nodes** with a **customised interface** for 
 
 - ROS2 Humble (or another compatible distribution)
 - Python 3
-- ROS2 `turtlesim` package
+- ROS2 `turtlesim` packag
 - Create a custom interface package including custom messages and services that are loaded into the repository.
 - Create ROS2 Python in order to include there the `controller.py` and `spawner.py` nodes.
 
@@ -90,7 +90,7 @@ The objective of this project is the implementation of ROS2 concepts such as:
 
 #### Key Functionalities:
 
-- Subscribing to Alive Turtles: Subscribes to the `alive_turtles` topic to receive updates on all alive turtles positions and names. This information is used to determine which turtle to chase.
+- Subscribing to Alive Turtles: Subscribes to the `alive_turtles` topic to receive updates on all alive turtles' positions and names. This information is used to determine which turtle to chase.
 
 - Selecting a Target Turtle:
 
@@ -114,7 +114,7 @@ The objective of this project is the implementation of ROS2 concepts such as:
 - Subscribers:
 
   - Pose Subscriber: Receives updates on turtle1's current position and orientation.
-  - Alive Turtles Subscriber: Receives updates on the list of alive turtles to determine which turtle to chase.
+  - Alive Turtles' Subscriber: Receives updates on the list of alive turtles to determine which turtle to chase.
 
 - Publishers:
 
@@ -139,3 +139,32 @@ The objective of this project is the implementation of ROS2 concepts such as:
 The ControllerNode continuously monitors the positions of alive turtles and navigates turtle1 towards the closest one.
 When turtle1 captures a turtle, it communicates with the SpawnerNode to remove that turtle from the simulator.
 This process repeats as new turtles are spawned by the SpawnerNode, creating an ongoing game of chase within the turtlesim simulator.
+
+
+## Custom Messages and Services
+**Turtle.msg**
+```
+string name
+float64 x
+float64 y
+float64 theta
+```
+
+**TurtleArray.msg**
+```
+Turtle[] turtles
+```
+
+**TurtleTaken.srv**
+```
+string name
+---
+bool success
+```
+
+## Future Work
+Consider implementing the following features to enhance the project:
+
+- Parameter Configuration: Allow customization of node parameters (e.g., spawn rate, turtle speed) via ROS2 parameters.
+- Launch Files: Create a launch file to simplify the execution of all nodes and set parameters.
+- User Interface: Develop a simple UI or command-line interface to control the simulation.
