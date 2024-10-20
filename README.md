@@ -71,6 +71,7 @@ Parameters allow customisation of node-internal variables during execution, incl
   - TurtleTaken.srv: Service definition for removing a turtle by name.
 
 ### ControllerNode
+
 #### Purpose: The ControllerNode controls the main turtle (turtle1) in the turtlesim simulator to chase and capture the turtles spawned by the SpawnerNode. It calculates the necessary movement commands to navigate towards the target turtle and requests the removal of the turtle once it is "captured".
 
 #### Key Functionalities:
