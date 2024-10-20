@@ -32,7 +32,9 @@ And other tools not included in this repository such as:
 Parameters allow customisation of node-internal variables during execution, including in the launch file, so as research from this repository, it is recommended to investigate these definitions.
 
 ## Nodes
+
 ### SpawnerNode
+
 #### Purpose: The SpawnerNode is responsible for spawning new turtles in the turtlesim simulator at random positions and orientations. It keeps track of all the alive turtles and publishes this information so other nodes can access it. Additionally, it provides a service to remove (kill) turtles from the simulator when they have been "captured" by the controller node.
 
 #### Key Functionalities:
