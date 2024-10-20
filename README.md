@@ -18,6 +18,7 @@ This repository contains two ROS2 nodes that interact with the `turtlesim` simul
 - Python 3
 - ROS2 `turtlesim` package
 - Create a custom interface package including custom messages and services that are loaded into the repository.
+- Create ROS2 Python in order to include there the 'controller.py' and 'spawner.py' nodes.
 
 ## Objectives
 The objective of this project is the implementation of ROS2 concepts such as:
