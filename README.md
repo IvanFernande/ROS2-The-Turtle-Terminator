@@ -20,15 +20,28 @@ This repository includes **two ROS2 nodes** with a **customised interface** for 
 - Create a custom interface package including custom messages and services that are loaded into the repository.
 - Create ROS2 Python in order to include there the `controller.py` and `spawner.py` nodes.
 
+## Usage
+1. Run the turtlesim simulator:
+```
+ros2 run turtlesim turtlesim_node
+```
+2. Start the Spawner Node:
+```
+ros2 run your_package_name spawner_node
+```
+3. Start the Controller Node:
+```
+ros2 run your_package_name controller_node
+```
+
 ## Objectives
 The objective of this project is the implementation of ROS2 concepts such as:
 - Creation of nodes.
 - Creation of custom interfaces, including messages and services.
 - Use of already created interfaces such as those of `turtlesim`.
-
-And other tools not included in this repository such as:
 - Configuration of parameters in the nodes.
 - Creation of a launch file to run all nodes.
+*Note: Parameters and launch files are not included in this repository but are recommended areas for further exploration.*
 
 Parameters allow customisation of node-internal variables during execution, including in the launch file, so as research from this repository, it is recommended to investigate these definitions.
 
