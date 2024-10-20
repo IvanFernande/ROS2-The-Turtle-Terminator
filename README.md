@@ -109,7 +109,7 @@ Parameters allow customisation of node-internal variables during execution, incl
   - Orientation Adjustment: Computes the required angular velocity to align turtle1 towards the target turtle.
   - Speed Adjustment: Adjusts the linear velocity proportionally to the distance, allowing for acceleration and deceleration as needed.
 
-- ervice Clients:
+- Service Clients:
 
   - Turtle Taken Service: Implements a client to call the turtle_taken service asynchronously when a turtle is captured.
 
