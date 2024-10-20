@@ -1,5 +1,7 @@
 # ROS2 Turtlesim: The Turtle Terminator
 
+![image](https://github.com/user-attachments/assets/0b1368a2-2074-4fb1-a694-66b68de0117e)
+
 This repository contains two ROS2 nodes that interact with the `turtlesim` simulator. One node is responsible for spawning turtles at random positions, and the other controls a turtle to chase and "capture" the spawned turtles.
 
 ## Description
