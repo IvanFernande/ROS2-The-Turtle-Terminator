@@ -15,7 +15,18 @@ This repository contains two ROS2 nodes that interact with the `turtlesim` simul
 - ROS2 Humble (or another compatible distribution)
 - Python 3
 - ROS2 `turtlesim` package
-- `my_interfaces` package with the custom messages and services that are uploaded in the repository
+- Create a custom interface package including custom messages and services that are loaded into the repository.
+
+## Objectives
+The objective of this project is the implementation of ROS2 concepts such as:
+- Creation of nodes.
+- Creation of custom interfaces, including messages and services.
+- Use of already created interfaces such as those of ‘turtlesim’.
+
+And other tools not included in this repository such as:
+- Configuration of parameters in the nodes.
+- Creation of a launch file to run all nodes.
+
 
 ## Installation
 
